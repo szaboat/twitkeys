@@ -1,0 +1,13 @@
+<html>
+<head>
+<script>
+  // Called when the user clicks on the browser action.
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    chrome.tabs.executeScript(null, {code:"document.body.bgColor='red'"});
+  });
+
+  chrome.browserAction.setBadgeBackgroundColor({color:[0, 200, 0, 100]});
+</script>
+</head>
+</html>
+
