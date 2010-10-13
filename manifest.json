@@ -1,13 +1,16 @@
 {
-  "name": "A browser action with no icon that makes the page red",
-  "version": "1.0",
-  "background_page": "background.html",
-  "permissions": [
-    "tabs", "http://*/*"
-  ],
-  "browser_action": {
-      "name": "Make this page red",
-      "icons": ["icon.png"]
-  }
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "icons": {
+    "48" : "sample-48.png",
+    "128" : "sample-128.png"
+  },
+  "background_page" : "background.html",
+  "content_scripts": [
+    {
+      "matches": ["http://twitter.com/*"],
+      "js" : ["jquery1.4.2.js","keys.js"]
+    }
+  ]
 }
-

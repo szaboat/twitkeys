@@ -1,3 +1,0 @@
-- Hotkeyek hozzaadasa a twitter oldlahoz
-	- helpbe beleirni 
-	- ha twit tartalmaz linket akkor kulon tabon megnyitni azt a hatterben
