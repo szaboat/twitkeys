@@ -5,9 +5,8 @@ $(function(){
 		var item = $('.hovered-stream-item');
 		var links = $('.hovered-stream-item .tweet-text a');
 
-		// check links function
 		if (links.length == 1){
-			if (links.attr('href').indexOf('twitter') == -1) {
+			if (links.attr('href').indexOf('twitter') == -1 && links.attr('href').indexOf('/') != 0 ) {
 				url = links.attr('href')
 			}
 		} else {
