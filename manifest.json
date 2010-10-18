@@ -1,12 +1,11 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
-  "icons": {
-    "48" : "sample-48.png",
-    "128" : "sample-128.png"
-  },
+  "name": "Twitkeys",
+  "version": "0.0.1",
+  "description": "Add some more functionality to twitter web UI with keyboard shortcuts",
   "background_page" : "background.html",
+	"permissions": [
+  	  "tabs"
+  ],
   "content_scripts": [
     {
       "matches": ["http://twitter.com/*"],
